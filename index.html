@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-body">
+<body class="section-bleu">
     <!-- header -->
     <header>
         <div class="logo">NextStep</div>
@@ -20,50 +20,86 @@
                 <li><a href="#">Accueil</a></li>
                 <li><a href="#concept">Concept</a></li>
                 <li><a href="#how">Comment ça marche</a></li>
-                <li><a href="#" class="btn-primary">Télécharger</a></li>
+                <li><a href="https://www.figma.com/proto/j1w265Jns23aQfqeC5wGxr/GROUPE-1---NextStep--?node-id=3076-1116&t=TdszjmWWRJtyWaT6-1&scaling=scale-down&content-scaling=fixed&page-id=2%3A261&starting-point-node-id=3076%3A1116"
+                        class="btn-primary">Télécharger</a></li>
             </ul>
         </nav>
     </header>
     <!-- section hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Choisis ton avenir avec confiance</h1>
-            <p>Connecte-toi avec des professionnels inspirants et découvre les parcours réels derrière chaque métier.
-            </p>
-            <a href="https://www.figma.com/design/j1w265Jns23aQfqeC5wGxr/Template-hackathon-latoile--Community-?node-id=3051-8&t=CQyvcF8uNA4uyJjd-1"
-                class="btn-hero" target="_blank">
-                Découvrir l'application
-            </a>
+    <section>
+
+        <!--GRANDE DIV-->
+        <div class="flex justify-center align-center bg-jaune-pale padding-60">
+
+            <!--DIV texte-->
+
+            <div>
+
+                <h1>
+
+                    Choisis ton avenir avec confiance
+                </h1>
+                <br>
+
+                <p>
+                    Connecte-toi avec des professionnels inspirants <br>
+                    découvre les parcours réels derrière chaque
+                    métier.
+
+                </p>
+
+                <br>
+                <br>
+                <a href="https://www.figma.com/proto/j1w265Jns23aQfqeC5wGxr/GROUPE-1---NextStep--?node-id=3076-1116&t=TdszjmWWRJtyWaT6-1&scaling=scale-down&content-scaling=fixed&page-id=2%3A261&starting-point-node-id=3076%3A1116"
+                    class="btn-hero" target="_blank">
+                    Découvrir l'application
+                </a>
+
+
+
+
+            </div>
+
+            <!--DIV IMAGE-->
+
+            <div class="w40">
+
+                <img src="asset/212shots_so.png" alt="" class="w100">
+
+            </div>
+
         </div>
+
     </section>
+
     <!-- section persona -->
 
 
-    <section>
+    <section class="section">
         <h2>Notre Persona</h2>
         <div>
-            <img src=" alt="" class="w80 persona" >
+            <img src="asset/persona.png" class="w80 persona">
         </div>
     </section>
     <!-- section preblématique -->
-     <section class="section">
-        <h2>La probléùatique</h2>
+    <section class="section">
+        <h2>La problématique</h2>
         <div class="card-large">
-            
+
             <p>Comment rassurer yasmine dans ses choix de poursuite d’étude ou d’insertion professionnel ? </p>
         </div>
-     </section>
-     <!-- section idée  -->
-      <section class="section">
+    </section>
+    <!-- section idée  -->
+    <section class="section">
         <h2>Notre idée </h2>
         <div class="card-large">
-            
-            <p>Une application qui permet à Yasmine de saisir sa formation et de recevoir des 
-            suggestions de professionnels ayant suivi des parcours similaires, avec qui elle peut échanger par visio ou messages pour découvrir leurs expériences et s’inspirer dans ses choix d’orientation et de projet professionnel. Elle propose également des événements de type “vie ma vie” — conférences, visioconférences, visites d’entreprises ou ateliers — pour expérimenter concrètement ces parcours et mieux se projeter.</p>
+
+            <p>Une application qui aide Yasmine à choisir sa formation en la mettant en relation avec des professionnels aux parcours similaires, avec qui elle peut échanger. Elle propose aussi des expériences immersives (conférences, visites, ateliers) pour lui permettre de mieux se projeter dans son avenir professionnel</p>
         </div>
+    </section>
 
     <!-- section pour quoi NextStep -->
-    <section id="concept" class="section">
+    <section id="concept" class="section section-bleu">
         <h2>Pourquoi NextStep ?</h2>
         <div class="cards">
             <div class="card">
@@ -84,7 +120,7 @@
     </section>
     <!-- section comment ca marche -->
 
-    <section id="how" class="section light">
+    <section id="how" class="section  section-bleu">
         <h2>Comment ça marche ?</h2>
         <div class="steps">
             <div class="step">
@@ -99,15 +135,74 @@
 
             <div class="step">
                 <span>3</span>
-                <p>Contacte un professionnel</p>
+                <p>Contacte un profil qui t'inspire</p>
             </div>
         </div>
     </section>
+     <!-- TEAM -->
+            <section id="team">
+                <h2>La team</h2>
+                <!-- grousse div de la teams -->
+
+                <div class="flex space-between">
+                    <!-- div round jaune thomas -->
+                    <div class=" flex column-direction align-center justify-center member">
+
+                        <div class="rond bg-jaune-moutarde ">
+                            <img src="asset/la team/thomas.png" alt="" class="w100">
+                        </div>
+
+                        <p class="Prenom">Thomas</p>
+                        <p>Quenelle</p>
+
+
+                    </div>
+                    <!-- div round biege saida -->
+                    <div class="flex column-direction align-center justify-center member">
+
+                        <div class=" rond bg-jaune-pale  ">
+                            <img src="asset/la team/saida.png" alt="" class="w100">
+                        </div>
+
+                        <p class="Prenom">Saïda</p>
+                        <p>Couscous</p>
+
+                    </div>
+
+                    <!-- div round sana orange -->
+                    <div class="flex column-direction align-center justify-center member">
+
+                        <div class="rond bg-orange  ">
+                            <img src="asset/la team/sana.png" alt="" class="w100">
+                        </div>
+
+                        <p class="Prenom">Sana</p>
+                        <p>Spaghetti
+                            bolognaise</p>
+
+
+                    </div>
+
+                    <!-- div round jaune clair -->
+                    <div class="flex column-direction align-center justify-center member">
+
+                        <div class=" rond bg-yellow  ">
+                            <img src="asset/la team/brandson.png" alt="" class="w100">
+                        </div>
+
+                        <p class="Prenom">Brandson</p>
+                        <p>Tagliatelle Saumon</p>
+
+
+                    </div>
+
+                </div>
+            </section>
     <!-- footer -->
     <footer>
         <h2>Disponible bientôt</h2>
         <p>Rejoins la nouvelle génération qui choisit son avenir intelligemment.</p>
-        <a href="#" class="btn-footer">Télécharger l'application</a>
+        <a href="https://www.figma.com/proto/j1w265Jns23aQfqeC5wGxr/GROUPE-1---NextStep--?node-id=3076-1116&t=TdszjmWWRJtyWaT6-1&scaling=scale-down&content-scaling=fixed&page-id=2%3A261&starting-point-node-id=3076%3A1116" class="btn-footer">Télécharger l'application</a>
     </footer>
 
 

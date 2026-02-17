@@ -8,7 +8,7 @@ body{
     font-family:'Inter',sans-serif;
     background:#f9fafb;
     color:#111827;
-    background: url(asset/ma\ recherche.png);
+   
 }
 
 /* HEADER */
@@ -27,7 +27,7 @@ header{
 .logo{
     font-weight:800;
     font-size:22px;
-    color:#4A90E2;
+    color:#5DD6BB;
 }
 
 nav ul{
@@ -48,7 +48,7 @@ nav a:hover{
 }
 
 .btn-primary{
-    background:#4A90E2;
+    background:#5DD6BB;
     color:white;
     padding:10px 20px;
     border-radius:30px;
@@ -57,16 +57,19 @@ nav a:hover{
 /* HERO */
 
 .hero{
-    height:90vh;
+    height:100vh;
     display:flex;
     align-items:center;
     justify-content:center;
     text-align:center;
-    background:linear-gradient(135deg,#4A90E2,#4FD1C5);
-    color:white;
+   
+    
     padding:20px;
 }
+.carte-hero{
 
+
+}
 .hero h1{
     font-size:50px;
     margin-bottom:20px;
@@ -102,6 +105,9 @@ nav a:hover{
 .section{
     padding:100px 20px;
     text-align:center;
+}
+.section-bleu{
+    background-color: #B4E1FF;
 }
 
 .section h2{
@@ -167,22 +173,127 @@ nav a:hover{
     font-weight:700;
     margin-bottom:15px;
 }
-/*classe largeure */
-.w95{
-    width: 95%;
+/* =========================
+   LARGEURS (UTILITAIRES)
+========================= */
+.w6 { width: 6%; }
+.w10 { width: 10%; }
+.w15 { width: 15%; }
+.w22 { width: 22%; }
+.w25 { width: 25%; }
+.w33 { width: 33%; }
+.w30{width: 30%;}
+.w40 { width: 40%; }
+.w48 { width: 48%; }
+.w50 { width: 50%; }
+.w60 { width: 60%; }
+.w68 { width: 68%; }
+.w70 { width: 70%; }
+.w75 { width: 75%; }
+.w80 { width: 80%; }
+.w90 { width: 90%; }
+.w95 {width: 95%;}
+.w100 { width: 100%; }
+.w130{width: 130%;}
+/* =========================
+   UTILITAIRES FLEXBOX
+========================= */
+.flex {
+    display: flex;
 }
-.w80{
-    width: 80%;
+
+.space-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.align-end {
+    align-items: flex-end;
+}
+
+.column-direction{
+    flex-direction: column;
+}
+
+.gap12 {
+    gap: 12px;
+}
+
+.gap20 {
+    gap: 20px;
 }
 .persona{
     justify-content: center;
     width: 80%;
 }
 
+/*=========== La teams*/
+
+.rond {
+     width: 175px;
+  height: 175px;
+  border-radius: 500px;
+      padding: 16px;
+
+
+}
+
+
+/* la position des round gauche droite*/
+
+.member {
+  text-align: center;
+  position: relative;
+   /* important*/
+}
+ /*la position des carte */
+ 
+.member:nth-child(1) {
+  animation: moveRight 3s ease-in-out infinite alternate;
+}
+.member:nth-child(2) {
+  animation: moveLeft 4s ease-in-out infinite alternate;
+}
+.member:nth-child(3) {
+  animation: moveRight 5s ease-in-out infinite alternate;
+}
+.member:nth-child(4) {
+  animation: moveLeft 3.5s ease-in-out infinite alternate;
+}
+ 
+/* keyframes */
+@keyframes moveRight {
+  0% { left: 0px; }
+  100% { left: 20px; }
+}
+ 
+@keyframes moveLeft {
+  0% { left: 0px; }
+  100% { left: -20px; }
+}
+ 
+.member img {
+  width: 120px;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
 /* FOOTER */
 
 footer{
-    background:#111827;
+    background:#5DD6BB;
     color:white;
     text-align:center;
     padding:80px 20px;
@@ -203,7 +314,7 @@ footer{
     background:#3b7ed0;
 }
 
-/* ANIMATION */
+/* ANIMATION 
 
 @keyframes fadeUp{
     from{
@@ -218,7 +329,7 @@ footer{
 
 /* RESPONSIVE */
 
-@media(max-width:768px){
+@media all and (max-width:768px){
 
     header{
         padding:20px;
